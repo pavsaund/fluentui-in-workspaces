@@ -1,0 +1,19 @@
+{
+    "name": "web.react",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "npx webpack --env.production --mode=production",
+        "build:dev": "npx webpack --env.development --mode=development",
+        "start": "webpack-dev-server --mode=development --watch --progress --hot --verbose --display-error-details",
+        "lint": "npx eslint -c ../../../.eslintrc.js --ext .ts,.tsx .",
+        "lint-fix": "npx eslint --fix -c ../../../.eslintrc.js --ext .ts,.tsx ."
+    },
+    "author": "Dolittle",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "@shared/webpack": "1.0.0"
+    }
+}
