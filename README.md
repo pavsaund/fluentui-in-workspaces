@@ -19,7 +19,7 @@ WARNING in ../node_modules/@fluentui/react-hooks/lib/useForceUpdate.js 7:13-27
  @ ../node_modules/@fluentui/react/lib/components/DetailsList/index.js
  @ ../node_modules/@fluentui/react/lib/DetailsList.js
  @ ../node_modules/@fluentui/react/lib/index.js
- @ ./App.tsx - just more of the same
+ @ ./App.tsx
 
 WARNING in ../node_modules/@fluentui/react-hooks/lib/useControllableValue.js 4:13-27
 "export 'useState' (imported as 'React') was not found in 'react'
