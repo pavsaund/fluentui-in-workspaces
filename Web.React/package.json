@@ -12,7 +12,9 @@
     },
     "author": "Dolittle",
     "license": "MIT",
-    "dependencies": {},
+    "dependencies": {
+
+    },
     "devDependencies": {
         "@shared/webpack": "1.0.0"
     }

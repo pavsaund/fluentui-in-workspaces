@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
+import { PrimaryButton } from 'office-ui-fabric-react';
 
 // import '@shared/styles';
 import './App.scss';
@@ -10,30 +11,31 @@ export default function App() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCounter(counter + 2);
-        }, 2000);
+            setCounter(counter + 1);
+        }, 1000);
 
         return () => {
             clearInterval(interval);
         };
     });
 
+    const  handleClick = () => {
+       setCounter(counter + 100);
+    };
+
     return (
         <>
-            <div className="ms-Grid" dir="ltr">
-                <div className="ms-Grid-row">
-                    <div className="ms-Grid-col ms-sm12">
+            <div className='ms-Grid' dir='ltr'>
+                <div className='ms-Grid-row'>
+                    <div className='ms-Grid-col ms-sm12'>
                         <h1>Title</h1>
                         <strong>{counter}</strong>
+                        <PrimaryButton onClick={() => handleClick()}>Add 100!</PrimaryButton>
                     </div>
                 </div>
             </div>
-            {/* <Sample something={counter} /> */}
         </>
     );
 }
 
-ReactDOM.render(
-    <App />,
-    document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById('root'));
