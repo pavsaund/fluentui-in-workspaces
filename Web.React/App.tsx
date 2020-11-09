@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import { PrimaryButton } from 'office-ui-fabric-react';
+import { Button } from '@fluentui/react';
 
 // import '@shared/styles';
 import './App.scss';
@@ -30,7 +30,7 @@ export default function App() {
                     <div className='ms-Grid-col ms-sm12'>
                         <h1>Title</h1>
                         <strong>{counter}</strong>
-                        <PrimaryButton onClick={() => handleClick()}>Add 100!</PrimaryButton>
+                        <Button onClick={() => handleClick()}>Add 100!</Button>
                     </div>
                 </div>
             </div>
